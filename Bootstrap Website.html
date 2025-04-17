@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ice Cream Website</title>
+
+ 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+
+  <!-- Optional icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .logo img {
+      max-height: 40px;
+      margin-right: 10px;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+
+    .footer-title {
+      text-align: center;
+      padding: 20px;
+      background-color:#333;
+    }
+
+    .footer-title a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    button a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card-group .card {
+      margin: 10px;
+    }
+
+    @media (max-width: 767px) {
+      .footer-title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .card-group {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header Logos and Top Nav -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+      <div class="logo d-flex flex-wrap">
+        <a href="https://www.icecream.com/us/en/brands/haagen-dazs"><img src="logo1.webp" alt=""></a>
+        <a href="https://www.icecream.com/us/en/brands/outshine"><img src="Logo2.webp" alt=""></a>
+        <a href="https://www.icecream.com/us/en/brands/drumstick"><img src="logo3.webp" alt=""></a>
+        <a href="https://www.icecream.com/us/en/brands/oreo"><img src="logo4.webp" alt=""></a>
+        <a href="https://www.icecream.com/us/en/brands/edys-and-dreyers"><img src="logo5.webp" alt=""></a>
+        <a href="https://www.icecream.com/us/en/brands/frollies"><img src="logo6.webp" alt=""></a>
+      </div>
+      <div>
+        <a class="navbar-brand" href="#">Corporate</a>
+        <a class="navbar-brand" href="#">Food Service</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-lg-none" href="#">Ice Cream</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+        aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Experience Ice Cream</a></li>
+        </ul>
+        <img src="logow.png" alt="" class="img-fluid" style="max-height: 50px;">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Brands</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Flavor Finder</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Flavor Quiz</a></li>
+          <li class="nav-item">
+            <a href="#"><i class="fa-solid fa-magnifying-glass nav-link"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h3>The best ice cream brands</h3>
+          <h1>All your faves, all in one place.</h1>
+          <button class="btn btn-primary mt-3">Get the Scoop!</button>
+        </div>
+        <div class="col-lg-6">
+          <img src="image ice cream.jpg" alt="Ice Cream Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flavor Quiz Section -->
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-lg-4">
+        <h1>Find your new fave flavor.</h1>
+        <p>Take the quiz to see which flavor you're feeling.</p>
+        <button class="btn btn-secondary">Take The Quiz <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="col-md-6 col-lg-8">
+        <img src="w1.png" alt="Flavor Quiz" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- Ice Cream Cards -->
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="card">
+          <img src="https://i.pinimg.com/564x/96/e5/d3/96e5d38eeeec4231f9f8c22a4a0c7a18.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card">
+          <img src="https://images-cdn.ubuy.co.in/6365f1712ff3a724063bef22-outshine-simply-indulgent-strawberry.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrhYd990X46bOhfsJXAa9oN7dCkGHgQxAYOA&s" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="card">
+          <img src="https://images-cdn.ubuy.co.in/661d3610005a9b640375cb86-nestle-drumstick-vanilla-ice-cream-cone.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recipe Filter -->
+  <div class="container text-center py-4">
+    <h1>Mix and Match Recipes</h1>
+    <div class="btn-group flex-wrap mt-3">
+      <button class="btn btn-outline-primary">All</button>
+      <button class="btn btn-outline-primary">Drinks and Floats</button>
+      <button class="btn btn-outline-primary">Cake and Cupcakes</button>
+      <button class="btn btn-outline-primary">Cakes and Smoothies</button>
+      <button class="btn btn-outline-primary">Sundaes</button>
+      <button class="btn btn-outline-primary">Kid Friendly</button>
+    </div>
+  </div>
+
+  <!-- Recipes -->
+  <div class="container py-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/icecream-com/recipes/outshine/chocolate-dipped-watermelon-superfood-bars/Chocolate-Super-Food-Dipped-Watermelon-Ingredients-Sqaure-4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Outshine</h5>
+            <h2 class="card-text">Watermelon Chocolate Dipped Superfood Bars</h2>
+            <p>Not all heroes wear capes, but this recipe will have you feeling super!</p>
+            <a href="#">View Recipe</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZ2bCdxqdH-eA1Gb43AuTUouzrNSf61qjkA&s" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Outshine</h5>
+            <h2 class="card-text">Raspberry Chocolate Dipped Bars</h2>
+            <p>Bright and decadent for the perfect Valentine's Day treat!</p>
+            <a href="#">View Recipe</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTig0a7o8-GblHZc0JxjTMRiQ8YHQW-VWducA&s" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Outshine</h5>
+            <h2 class="card-text">Mango Tajin Frozen Mocktail</h2>
+            <p>Pep! Zing! It's Mango with Tajin! Tickle your taste buds with frozen chile lime heat.</p>
+            <a href="#">View Recipe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mb-5">
+    <button class="btn btn-primary">See all Recipes</button>
+  </div>
+
+  <!-- Seasonal -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h1>Winter’s on. Seasonal flavors are, too.</h1>
+          <h4>Peppermint, mint, cinnamon and caramel are waiting for you</h4>
+          <button class="btn btn-secondary mt-2">See our seasonal offerings</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white pt-5">
+    <div class="container text-center">
+      <img src="Footer-Logo.svg" alt="Footer Logo" class="img-fluid mb-3">
+      <div class="footer-title">
+        <a href="#">Privacy</a>
+        <a href="#">Accessibility Statement</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Coupon Redemption</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+    <hr class="bg-white mt-4">
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
